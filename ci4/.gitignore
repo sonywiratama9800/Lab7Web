@@ -1,0 +1,28 @@
+# Folder Vendor (Composer)
+/vendor/
+
+# File Environment & Konfigurasi Sensitif
+.env
+phpunit.xml
+
+# Folder Writable (Data Dinamis & Log)
+writable/cache/*
+writable/debugbar/*
+writable/logs/*
+writable/session/*
+writable/uploads/*
+
+# Abaikan file di dalam folder tersebut, tapi tetap simpan foldernya
+!writable/cache/index.html
+!writable/debugbar/index.html
+!writable/logs/index.html
+!writable/session/index.html
+!writable/uploads/index.html
+
+# File Sistem & Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
